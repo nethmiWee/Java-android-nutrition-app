@@ -1,5 +1,5 @@
 # Java-android-nutrition-app
-Uses firebase storage and realtime database, SQlite and Open foods api to get and store nutrition information searched by user with Barcode scanner/search bar, with added list creation and search of food items and lists. 
+Uses CRUD functionality, firebase storage and realtime database, SQlite and Open foods api to get and store nutrition information searched by user with Barcode scanner/search bar, with added list creation and search of food items and lists. 
 
 ## Preview of application
 ![Search and list screens](https://firebasestorage.googleapis.com/v0/b/storeling-c0777.appspot.com/o/Search%20and%20list%20screens.png?alt=media&token=fbe360cf-eaae-4ebb-acd5-ca5d0c06256e)
