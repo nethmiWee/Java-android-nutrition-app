@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FDEEFDE8"
+    tools:context=".AddActivity"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loader"
+        android:layout_width="362dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="24dp"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loader" />
+
+    <EditText
+        android:id="@+id/calcium"
+        android:layout_width="257dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="calcium mg"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/grade_input"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="B"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#BED3BB"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/group_input" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="sans-serif"
+        android:text="Nova number"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_input" />
+
+    <EditText
+        android:id="@+id/Sodium"
+        android:layout_width="255dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Sodium mg"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cholesterol" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif"
+        android:text="Grade"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif"
+        android:text="Cal:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/calcium"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif"
+        android:text="Cho:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cholesterol"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif"
+        android:text="So:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Sodium"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif"
+        android:text="Fat:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Fat"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif"
+        android:text="Sug:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Sugar"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif"
+        android:text="Ene:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Energy"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="167dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#C4E1A6"
+        android:clickable="true"
+        android:fadeScrollbars="true"
+        android:isScrollContainer="true"
+        android:textColor="#D5637C5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Energy" />
+
+    <EditText
+        android:id="@+id/productName_input"
+        android:layout_width="262dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productCode_input" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="sans-serif"
+        android:text="Food icon:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Energy" />
+
+    <EditText
+        android:id="@+id/Fat"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="86dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Fat g"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sodium" />
+
+    <EditText
+        android:id="@+id/cholesterol"
+        android:layout_width="254dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="cholesterol mg"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="Nutrients:"
+        android:textColor="#D5637C5E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/Energy"
+        android:layout_width="257dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Energy kcal"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sugar" />
+
+    <EditText
+        android:id="@+id/ingredients_input"
+        android:layout_width="264dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="91dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Ingredients"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName_input" />
+
+    <EditText
+        android:id="@+id/group_input"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="2"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_input" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="276dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="268dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <EditText
+        android:id="@+id/Sugar"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Sugar g"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fat" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="301dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="416dp"
+        app:layout_constraintStart_toStartOf="@+id/calcium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <EditText
+        android:id="@+id/productCode_input"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Code"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="277dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add Product"
+        android:textColor="#C30A6707"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/productCode_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nutrients_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textPersonName"
+        android:text="Nutrients"
+        android:textColor="#D5637C5E"
+        android:textColorHint="#98CA8F"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/product_add_button_home"
+        android:layout_width="205dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#85C879"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Scan to add food item >"
+        android:textColor="#468148"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/productName_input"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:backgroundTint="#329337"
+        app:layout_constraintStart_toEndOf="@+id/productCode_input"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_baseline_qr_code_scanner_24"
+        app:tint="@color/white" />
+
+    <EditText
+        android:id="@+id/imageMain"
+        android:layout_width="61dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="95dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zxing_barcode_scanner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

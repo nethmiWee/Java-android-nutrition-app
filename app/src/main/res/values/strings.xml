@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">NutitionInfoApp</string>
+    <string-array name="names">
+        <item>Unspecified</item>
+        <item>Sugar</item>
+        <item>Grain</item>
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Poultry</item>
+        <item>Seafood</item>
+        <item>Healthy</item>
+        <item>Fast-Food</item>
+        <item>Alcohol</item>
+        <item>Cold-Drink</item>
+        <item>Dairy</item>
+        <item>Hot-Drink</item>
+        <item>Milkshake</item>
+        <item>Misc</item>
+        <item>Noodles</item>
+        <item>Pastry</item>
+        <item>Crustacean</item>
+        //TODO soup, curry
+    </string-array>
+
+    <string-array name="list">
+        <item>Healthy</item>
+        <item>Unhealthy</item>
+        <item>Avoid</item>
+        <item>Favourites</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Gluten Free</item>
+        <item>Organic</item>
+        <item>Salads</item>
+        <item>Drinks</item>
+
+    </string-array>
+
+    <string name="setupText">
+        <item>This is the set up screen of nutra green, thank you for installing the app!
+            Know what you eat and have the information at the tip of your fingers with open food api, custom lists and more </item>
+    </string>
+
+</resources>

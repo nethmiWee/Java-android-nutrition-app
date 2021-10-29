@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEEFDE8"
+    android:backgroundTint="#FDEEFDE8"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Search"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingLeft="3dp"
+        android:textColorHighlight="#75A478"
+        android:textColorHint="#1A7823"
+        android:textColorLink="#519657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="266dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="206dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="272dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="244dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Search name"
+        android:textColor="#18810C"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="137dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="of food or list"
+        android:textColor="#18810C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMerged"
+        android:layout_width="339dp"
+        android:layout_height="483dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#8BC34A"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Reset"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

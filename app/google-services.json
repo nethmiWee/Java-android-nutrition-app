@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "782755241313",
+    "firebase_url": "https://storeling-c0777-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "storeling-c0777",
+    "storage_bucket": "storeling-c0777.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782755241313:android:ffe1ec252eff125b0fb920",
+        "android_client_info": {
+          "package_name": "nearchos.github.nutitioninfoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782755241313-snvm4cvkftfas77454jvov9pqfttvi8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nearchos.github.nutitioninfoapp",
+            "certificate_hash": "aac916f98c65bdad222ee05de9affce936bb858b"
+          }
+        },
+        {
+          "client_id": "782755241313-nd7b2egsjvgff1er7lmfc5og57sla66r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHDQu0CKR-M_xAsanrolkbBLbfWPNlP_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782755241313-nd7b2egsjvgff1er7lmfc5og57sla66r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

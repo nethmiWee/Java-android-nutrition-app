@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NutitionInfoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#81c784</item>
+        <item name="colorPrimaryVariant">#1A7823</item>
+        <item name="colorOnPrimary">#75a478 </item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#55C575</item>
+        <item name="colorSecondaryVariant">#75a478</item>
+        <item name="colorOnSecondary">#75a478 </item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#1B611B</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="DividerTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+
+</resources>
